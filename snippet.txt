@@ -5,3 +5,5 @@ curl https://public-node.testnet.rsk.co/2.2.0/ -X POST -H "Content-Type: applica
 java -cp rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 
 tokenAddress = "0x1607D05EEb9b2DFF0851D9fF8EE618296095B38c"
+
+geth --rpc --rpcaddr "127.0.0.1" --rpcport "8545"
