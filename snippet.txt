@@ -1,0 +1,7 @@
+# Get the current gas price of the testnet network, and save to .gas-price-testnet.json
+curl https://public-node.testnet.rsk.co/2.2.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
+
+# run local RSK node
+java -cp rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+
+tokenAddress = "0x1607D05EEb9b2DFF0851D9fF8EE618296095B38c"
