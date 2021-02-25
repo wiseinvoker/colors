@@ -23,6 +23,11 @@ module.exports = {
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
     },
+    development: {
+      host: "127.0.0.1",
+      port: 4444,
+      network_id: "*"
+    },
   },
 
   contracts_build_directory: path.join(__dirname, "app/src/contracts"),
